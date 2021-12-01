@@ -1,8 +1,8 @@
-#Design a Tic Tac Toe Game
+# Design a Tic Tac Toe Game
 
-##This is a LLD problem with the specifications laid out as below
+## This is a LLD problem with the specifications laid out as below
 
-###Requirements
+### Requirements
 
 1. Design a game of Tic Tac Toe.
 2. The game will have 2 players and a board of nxn.
