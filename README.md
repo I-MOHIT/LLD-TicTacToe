@@ -20,4 +20,4 @@
 
 ---
 # Class Diagram
-![Alt text](./TicTacToe_ClassDiagram.jpg?raw=true "Class Diagram")
+![Alt text](./TicTacToe_ClassDiagram_Updated.jpg?raw=true "Class Diagram")
