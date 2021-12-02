@@ -1,7 +1,7 @@
 package com.mohit;
 
 public class Player extends User{
-    private final MoveType moveType;
+    private MoveType moveType;
 
     public Player(String username, MoveType moveType){
         super(username);

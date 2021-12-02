@@ -2,23 +2,26 @@ package com.mohit;
 
 public class Game {
     private final Board board;
-    private final Player[] players;
+    private Player[] players;
     private Player currentPlayer;
     private GameStatus gameStatus;
-    private final int cells = 3;
+    public int cells;
     private final int numPlayers = 2;
-    private final int[] arrRow = new int[cells];
-    private final int[] arrCol = new int[cells];
+    private int[] arrRow;
+    private int[] arrCol;
     private int diagonal_r2l = 0;
     private int diagonal_l2r = 0;
 
-    public Game(Player p1, Player p2){
-        players = new Player[numPlayers];
+    public Game(Player p1, Player p2, int dimension){
+        this.cells = dimension;
+        this.players = new Player[numPlayers];
         players[0] = p1;
         players[1] = p2;
-        board = new Board(cells);
-        currentPlayer = players[0];
-        gameStatus = GameStatus.PLAYING;
+        this.board = new Board(dimension);
+        this.currentPlayer = players[0];
+        this.gameStatus = GameStatus.PLAYING;
+        this.arrRow = new int[cells];
+        this.arrCol = new int[cells];
     }
 
     public GameStatus getGameStatus() {
@@ -30,7 +33,7 @@ public class Game {
     }
 
     public boolean isValidMove(int row, int col){
-        return (row>=0 && row<cells && col>=0 && col<cells && board.cells[row][col]==null);
+        return (row>=0 && row<cells && col>=0 && col<cells && board.cells[row][col]!=null);
     }
 
     public boolean hasWon(int row, int col){

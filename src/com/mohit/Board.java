@@ -7,6 +7,7 @@ public class Board {
     public Board(int numCells) {
         this.numCells = numCells;
         cells = new Cell[numCells][numCells];
+        initializeBoard();
     }
 
     public Cell[][] getCells() {
@@ -18,16 +19,17 @@ public class Board {
     }
 
     public void printBoard(){
-        System.out.println("----------");
+        System.out.println("--------------------");
         for(int i=0;i<numCells;i++){
             for(int j=0;j<numCells;j++){
                 if(cells[i][j].getMoveType()==null){
-                    System.out.println(" | " + " " + " | ");
+                    System.out.print(" | " + " " + " | ");
                 }else{
-                    System.out.println(" | " + cells[i][j].getMoveType() + " | ");
+                    System.out.print(" | " + cells[i][j].getMoveType() + " | ");
                 }
             }
-            System.out.println("----------");
+            System.out.println();
+            System.out.println("--------------------");
         }
     }
 
