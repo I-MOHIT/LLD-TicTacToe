@@ -3,7 +3,7 @@ package com.mohit;
 import java.util.UUID;
 
 public class User {
-    String userName;
+    private String userName;
     private String userId;
 
     public User(String userName) {

@@ -1,9 +1,9 @@
 package com.mohit;
 
 public class Cell {
-    int row;
-    int col;
-    MoveType moveType;
+    private int row;
+    private int col;
+    private MoveType moveType;
 
     public Cell(int row, int col, MoveType moveType) {
         this.row = row;

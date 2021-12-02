@@ -9,6 +9,9 @@ public class Main {
         Player p1 = new Player("ABCD", MoveType.X);
         Player p2 = new Player("EFGH", MoveType.O);
 
+        Board board = new Board(3);
+        board.initializeBoard();
+
         System.out.println("Game 1");
         Game game1 = new Game(p1,p2);
         game1.play(0,0);

@@ -30,7 +30,7 @@ public class Game {
     }
 
     public boolean isValidMove(int row, int col){
-        return (row>=0 && row<=cells && col>=0 && col<=cells && board.cells[row][col]!=null);
+        return (row>=0 && row<cells && col>=0 && col<cells && board.cells[row][col]==null);
     }
 
     public boolean hasWon(int row, int col){
@@ -51,7 +51,7 @@ public class Game {
         }else{
             if(row == col){
                 diagonal_l2r--;
-            }else if(row+col == cells-1){
+            }else if(row+col == -(cells-1)){
                 diagonal_r2l--;
             }
             arrRow[row]--;
