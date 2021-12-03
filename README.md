@@ -1,6 +1,10 @@
 # Design a Tic Tac Toe Game
 
-## This is a LLD problem with the specifications laid out as below
+---
+
+## This is an LLD problem with the specifications laid out as below
+
+---
 
 ### Requirements
 
@@ -19,5 +23,6 @@
 - Cell (A member of the board, the board will have nxn cells)
 
 ---
+
 # Class Diagram
 ![Alt text](./TicTacToe_ClassDiagram_Updated.jpg?raw=true "Class Diagram")
